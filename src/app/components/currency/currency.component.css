@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px 33%;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  height: 320px;
+  padding-top: 30px;
+  background-color: #544764;
+  color: snow;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input{
+  height: 20px;
+  width: 90px;
+}
+
+select{
+  height: 26px;
+  width: 55px;
+}
+
+.to{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.result{
+  margin-top: 30px;
+}
+

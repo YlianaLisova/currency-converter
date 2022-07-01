@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Currency Converter</h1>
+  <div class="wrapper">
+  <input #v1 type="number" value="{{(currency2/result).toFixed(2)}}" (keyup)="convert()" [(ngModel)]="currency1">
+    <select #s1 name="" id="country1" (mouseup)="changeFirst(s1.value)" (change)="convert()">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="UAH">UAH</option>
+    </select>
+    <p class="to">to</p>
+    <input #v2 type="number" value="{{(result * currency1).toFixed(2)}}" (keyup)="convert()" [(ngModel)]="currency2">
+    <select #s2 name="" id="country2" (mouseup)="changeSecond(s2.value)" (change)="convert()">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="UAH">UAH</option>
+    </select>
+  </div>
+  <div class="result">
+    <p>{{v1.value || 0}} {{first}} = {{v2.value || 0}} {{second}}</p>
+  </div>
+</div>
